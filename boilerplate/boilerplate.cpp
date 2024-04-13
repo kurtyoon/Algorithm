@@ -1,13 +1,4 @@
-#include <algorithm>
-#include <deque>
-#include <iostream>
-#include <map>
-#include <list>
-#include <queue>
-#include <set>
-#include <stack>
-#include <string>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 
 void init() {
@@ -15,7 +6,7 @@ void init() {
     cin.tie(0); cout.tie(0);
 }
 
-int main() {
+int main(void) {
     init();
     return 0;
 }
