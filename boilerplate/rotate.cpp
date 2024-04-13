@@ -6,7 +6,7 @@ const int m = 4;
 /**
  * 반시계 방향으로 90도 회전
 */
-void rotate_left_90(vector<vector<int>> &key) {
+void RotateLeft90(vector<vector<int>> &key) {
     int n = key.size();
     int m = key[0].size();;
     vector<vector<int>> temp(m, vector<int>(n, 0));
@@ -24,7 +24,7 @@ void rotate_left_90(vector<vector<int>> &key) {
 /**
  * 시계 방향으로 90도 회전
 */
-void rotate_right_90(vector<vector<int>> &key) {
+void RotateRight90(vector<vector<int>> &key) {
     int n = key.size();
     int m = key[0].size();
     vector<vector<int>> temp(m, vector<int>(n, 0));
@@ -51,7 +51,7 @@ int main(void) {
         {9, 10, 11, 12},
     };
 
-    rotate_right_90(a);
+    RotateRight90(a);
 
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++) {

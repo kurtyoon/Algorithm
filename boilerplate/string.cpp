@@ -4,7 +4,7 @@ using namespace std;
 /**
  * split string function
 */
-vector<string> split(string input, string delimiter) {
+vector<string> Split(string input, string delimiter) {
     vector<string> result;
     long long pos = 0;
     string token = "";
@@ -22,7 +22,7 @@ vector<string> split(string input, string delimiter) {
 /**
  * faster split string function
 */
-vector<string> split(const string& input, string delimiter) {
+vector<string> Split(const string& input, string delimiter) {
     vector<string> result;
     auto start = 0;
     auto end = input.find(delimiter);
