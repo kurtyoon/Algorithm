@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class Solution {
 
     public static class SetOperations {
         private int set = 0;

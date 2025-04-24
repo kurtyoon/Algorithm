@@ -58,8 +58,8 @@ public class Solution {
                 fruits[i] = Integer.parseInt(br.readLine());
             }
 
-            Main main = new Main();
-            int result = main.solution(n, m, j, fruits);
+            Solution solution = new Solution();
+            int result = solution.solution(n, m, j, fruits);
 
             bw.write(result + "\n");
             bw.flush();
