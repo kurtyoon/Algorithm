@@ -3,34 +3,67 @@ import java.io.*;
 
 public class Solution {
 
+    public static class Edge {
+        int from, to, cost;
+
+        Edge(int from, int to, int cost) {
+            this.from = from;
+            this.to = to;
+            this.cost = cost;
+        }
+    }
+
+    static final long INF = 987654321L;
+    static int n, m;
+    static List<Edge> edges = new ArrayList<>();
+    static long[] dist;
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         StringTokenizer st = new StringTokenizer(br.readLine());
 
-        int t = Integer.parseInt(st.nextToken());
+        n = Integer.parseInt(st.nextToken());
+        m = Integer.parseInt(st.nextToken());
 
-        long[] dp = new long[10001];
+        dist = new long[n + 1];
+        Arrays.fill(dist, INF);
 
-        dp[0] = 1;
+        dist[1] = 0;
 
-        for (int i = 1; i <= 3; i++) {
-            for (int j = 1; j <= 10000; j++) {
-                if (j - i >= 0) {
-                    dp[j] += dp[j - i];
+        for (int i = 0; i < m; i++) {
+            st = new StringTokenizer(br.readLine());
+
+            int a = Integer.parseInt(st.nextToken());
+            int b = Integer.parseInt(st.nextToken());
+            int c = Integer.parseInt(st.nextToken());
+
+            edges.add(new Edge(a, b, c));
+        }
+
+        boolean hasNegativeCycle = false;
+
+        for (int i = 0; i < n; i++) {
+            for (Edge edge : edges) {
+                if (dist[edge.from] != INF && dist[edge.from] + edge.cost < dist[edge.to]) {
+                    dist[edge.to] = dist[edge.from] + edge.cost;
                 }
             }
         }
 
-        while (t-- > 0) {
-            int n = Integer.parseInt(br.readLine());
-            bw.write(dp[n] + "\n");
-        } 
-        
-        bw.flush();
+        for (Edge edge : edges) {
+            if (dist[edge.from] != INF && dist[edge.from] + edge.cost < dist[edge.to]) {
+                hasNegativeCycle = true;
+                break;
+            }
+        }
 
-        bw.close();
-        br.close();
+        if (hasNegativeCycle) {
+            System.out.println("-1");
+        } else {
+            for (int i = 1; i <= n; i++) {
+                System.out.println(dist[i] == INF ? -1 : dist[i]);
+            }
+        }
     }
 }

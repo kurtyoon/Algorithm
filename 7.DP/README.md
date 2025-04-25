@@ -416,3 +416,5 @@ for (int i = 1; i <= 3; i++) {
 6. [1로 만들기 2](boj12852_1로_만들기_2/Problem.md)
 7. [동전 2](boj2294_동전2/Problem.md)
 8. [동전 1](boj2293_동전1/Problem.md)
+9. [사탕 가게](boj4781_사탕_가게/Problem.md)
+10. [평범한 배낭](boj12865_평범한_배낭/Problem.md)
