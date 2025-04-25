@@ -414,3 +414,5 @@ for (int i = 1; i <= 3; i++) {
 4. [자두나무](boj2240_자두나무/Problem.md)
 5. [알약](boj4811_알약/Problem.md)
 6. [1로 만들기 2](boj12852_1로_만들기_2/Problem.md)
+7. [동전 2](boj2294_동전2/Problem.md)
+8. [동전 1](boj2293_동전1/Problem.md)

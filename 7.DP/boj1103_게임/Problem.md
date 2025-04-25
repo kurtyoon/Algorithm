@@ -1,4 +1,4 @@
-# 외판원 순회
+# 게임
 
 [바로가기](https://www.acmicpc.net/problem/1103)
 

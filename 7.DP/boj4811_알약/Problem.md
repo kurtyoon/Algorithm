@@ -1,4 +1,4 @@
-# 외판원 순회
+# 알약
 
 [바로가기](https://www.acmicpc.net/problem/4811)
 

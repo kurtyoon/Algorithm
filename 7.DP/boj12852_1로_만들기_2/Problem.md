@@ -1,4 +1,4 @@
-# 외판원 순회
+# 1로 만들기 2
 
 [바로가기](https://www.acmicpc.net/problem/12852)
 
