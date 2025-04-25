@@ -409,4 +409,8 @@ for (int i = 1; i <= 3; i++) {
 ## DP 실전 문제
 
 1. [외판원 순회](boj2098_외판원순회/Ploblem.md)
-2. [파이프 옮기기](boj17070_파이프_옮기기_1/Problem.md)
+2. [파이프 옮기기 1](boj17070_파이프_옮기기_1/Problem.md)
+3. [게임](boj1103_게임/Problem.md)
+4. [자두나무](boj2240_자두나무/Problem.md)
+5. [알약](boj4811_알약/Problem.md)
+6. [1로 만들기 2](boj12852_1로_만들기_2/Problem.md)
